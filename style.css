@@ -172,6 +172,16 @@ section{
     height: 80vh;
 }
 
+.AWS-logos, .cert{ /*-------------------------------------*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 8rem;
+}
+
+
+
+
 .section__pic-container{
     display: flex;
     height: 400px;
@@ -210,6 +220,8 @@ section{
     margin-top: 1rem;
     gap: 1rem;
 }
+
+
 
 /*Icons*/
 
@@ -262,6 +274,9 @@ section{
 
 /*About Section*/
 
+.text-container{
+    text-align: justify;
+}
 #about{
     position:relative;
 }
@@ -334,12 +349,13 @@ section{
 }
 
 .article-container{
+
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content:space-round;
+    justify-content:center;
 }
 
 article{
@@ -419,6 +435,7 @@ article .icon{
 }
 
 .email-icon{
+    
     height: 2.5rem;
 }
 
