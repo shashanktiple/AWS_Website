@@ -11,6 +11,20 @@
             "Resource": [
                 "arn:aws:s3:::Bucket-Name/*"
             ]
+        },
+        {
+            "Sid": "RequireHttps",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::Bucket-Name/*"
+            ],
+            "Condition": {
+                "Bool": {
+                    "aws:SecureTransport": "false"
+                }
+            }
         }
     ]
-} 
+}
