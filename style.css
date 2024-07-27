@@ -166,7 +166,8 @@ section{
 /*Profile*/
 
 #profile{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content:center ;
     gap: 5rem;
     height: 80vh;
@@ -174,9 +175,11 @@ section{
 
 .AWS-logos, .cert{ /*-------------------------------------*/
     display: flex;
+    flex-flow: wrap;
     flex-direction: row;
     justify-content: center;
     height: 8rem;
+    row-gap: 1rem;
 }
 
 
@@ -186,11 +189,11 @@ section{
     display: flex;
     height: 400px;
     width: 400px;
-    margin: auto 0;
+    /*margin: auto 0;*/
 }
 
 .section__text{
-    align-self:center ;
+    /*align-self:center ;*/
     text-align: center;
 }
 
@@ -295,6 +298,8 @@ section{
 
 .about-containers, .about-details-container{
     display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
 }
 
 
@@ -321,12 +326,6 @@ section{
 .section-container{
     gap: 4rem;
     height: 80%;
-}
-
-.section__pic-container{
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
 }
 
 
@@ -380,12 +379,14 @@ article .icon{
 .color-container{
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
+    width: 12rem;
+    max-width: 12rem;
 }
 
 .project-img{
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 10rem;
+    height: 10rem;
 }
 
 .project-title{
